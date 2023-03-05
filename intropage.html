@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOMEPAGE</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=200.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://kit.fontawesome.com/4399e2b32b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="banner">
+ 	<img src="logo2.png" class="logo">
+ </div>
+	  <div class="banner">
+
+	  	<div class="navbar">
+	  		<ul>
+	  			<li><a href="intropage.html">home</a></li>
+	  			<li><a href="aboutus.html">about us</a></li>
+	  			<li><a href="141REBORN1.html">TF141 team</a></li>
+	  			<li><a href="stalker.html">Stalker team</a></li>
+	  		</ul>
+	  	</div>
+  	<div class="content">
+  	 <h1>SHINRA ESPORTS</h1>
+  	 <p>Shinra Esports is a gaming team founded by Marc Clarence Sangcap, Brian Osorio, and John Marvin Pasco. It is a multi-game esport, mainly Call of Duty. <br>This team also played Mobile Legends, Apex Legends, Clash of Clans, Wildrift, and Sausage Man.</p>	
+  	 <div class="content1">
+  	 	<button type="button"><span></span>FACEBOOK</button>
+  	 	<button type="button"><span></span>YOUTUBE</button>
+  	 </div>
+  	</div>
+
+ </div>
+
+
+</body>
+</html>
+
+<style type="text/css">
+ *{
+   margin: 0;
+   padding: 0;
+   background-image:url("price0.jpg");
+   background-size: cover;
+   font-family: sans-serif;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  }
+  .banner{
+   width:100%;
+   height:100vh;
+  }
+  .logo{
+   mix-blend-mode:multiply;
+   width: 200px;
+   height: 100px;
+   margin-left:-20px;
+   margin-top:10px;
+   cursor: pointer;		
+  } 
+  .navbar{
+  	background: transparent;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	margin-top:-605px;
+  	margin-left:795px;
+  }
+  .navbar ul{
+  	background: transparent;
+    display: flex;
+    align-items: center;
+  	justify-content: space-between;
+  }
+  .navbar ul li{
+   list-style: none;
+   display: flex;
+   margin: 0 20px;
+   background: transparent;
+   position: relative;
+  }
+  li{
+  margin-top:20px; 
+  }
+  .navbar ul li a{
+   text-decoration: none;
+   color: #ffffff;
+   text-transform: uppercase;
+  }
+  .navbar ul li a::after{
+   content: '';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position: absolute;
+   left:0;
+   bottom: -10px;
+   transition: 0.5s;
+   color: blue;
+  }
+  .navbar ul li a:hover::after{
+   width: 100%	
+  } 
+  .content{
+ 	width: 100%;
+ 	position:absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	text-align: center;
+ 	color:#ffffff;
+ 	background: transparent;
+  }
+  .content h1{
+  	font-size: 50px;
+  	margin-top: 100px;
+  	color:transparent;
+  	-webkit-text-stroke:1px #fff;
+  	background: url(back.png);
+  	-webkit-background-clip:text;
+  	background-position: 0 0;
+  	animation: back 20s linear infinite; 
+  }
+  @keyframes back{
+  	100%{
+  		background-position: 2000px 0;
+  	}
+  }
+  .content p{
+  	margin: 20px auto;
+  	font-weight: 100;
+  	line-height: 25px;
+  	color:#ffffff;
+  	background: transparent;
+  }
+  .content1{
+ 	width: 100%;
+ 	position:absolute;
+ 	text-align: center;
+ 	color:#ffffff;
+ 	background: transparent;
+  }
+  .content1 button{
+    background: transparent;
+  }
+  button{
+  	width: 200px;
+  	padding: 15px 0;
+  	text-align: center;
+  	margin: 20px 10px;
+  	border-radius: 25px;
+  	font-weight: bold;
+  	border: 2px solid #009688;
+  	background: transparent;
+  	color: #fff;
+  	cursor: pointer;
+  	position: relative;
+  	overflow: hidden;
+  }
+   span{
+   	background: #009688;
+   	height: 100%;
+   	width: 0;
+   	border-radius: 25px;
+   	position: absolute;
+   	left: 0;
+   	bottom: 0;
+   	z-index: -1;
+   	transition: 0.5s;
+   }
+   button:hover span{
+   	width: 100%;
+   }
+   button:hover{
+   	border: none;
+   }
+</style>:
