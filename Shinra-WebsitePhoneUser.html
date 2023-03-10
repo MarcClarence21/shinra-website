@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Website Phone User</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://kit.fontawesome.com/4399e2b32b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="content">
+  	 <h1>SHINRA ESPORTS</h1>
+  	 <p>Shinra Esports is a gaming team founded <br>by Marc Clarence Sangcap, Brian Osorio, <br>and John Marvin Pasco. It is a multi-game <br>esport, mainly Call of Duty. <br><br>This team also played Mobile Legends, Apex Legends, Clash of Clans, Wildrift,<br> and Sausage Man.</p>	
+  	 <div class="content1">
+  	 	<button type="button"><span></span>FACEBOOK</button>
+  	 	<button type="button"><span></span>YOUTUBE</button>
+  	 </div>
+  	</div>
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fa-solid fa-bars" id="btn"></i>
+<i class="fa-solid fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+<header>SHINRA ESPORTS</header>
+<ul>
+<li><a href="Shinra-WebsitePhoneUser.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+<li><a href="AboutUsPhoneUser.html"><i class="fa-solid fa-book"></i>ABOUT US</a></li>
+<li><a href="TF141PhoneUser.html"><i class="fa-solid fa-user-secret"></i>TF141 TEAM</a></li>
+<li><a href="StalkerPhoneUser.html"><i class="fa-solid fa-user-ninja"></i>STALKER TEAM</a></li>
+</ul>
+</div>
+<section></section>
+
+</body>
+</html>
+
+<style type="text/css">
+*{
+font-family:sans-serif;
+} 
+.sidebar{
+position:fixed;
+left:-250px;
+width:250px;
+height:100%;
+background-color:#042331;
+top:0;
+transition:all .5s ease;
+display:block;
+overflow:hidden
+}
+.sidebar header{
+ font-size:22px;
+ color:white;
+ text-align:center;
+ line-height:90px;
+ background-color:#063146;
+ user-select:none;
+}
+.sidebar ul li{
+list-style:none;
+margin-left:-40px;
+margin-top:px;
+}
+.sidebar ul a{
+margin-top:px;
+display:block;
+height:10%;
+width:100%;
+line-height:65px;
+font-size:20px;
+color:white;
+padding-left:40px;
+box-sizing: border-box;
+border-top:1px solid rgba(255,255,255,.1);
+border-bottom:1px solid black;
+text-decoration:none;
+transition:.4s
+}
+ul li:hover a{
+padding-left:50px;
+}
+.sidebar ul a i{
+margin-right:16px;
+}
+#check{
+display:none;
+}
+label #btn, label #cancel{
+position:absolute;
+cursor:pointer;
+background-color:#042331;
+border-radius:3px;
+}
+label #btn{
+left:15px;
+top:15px;
+font-size:35px;
+color:white;
+padding:6px 12px;
+transition: all .5s;
+position:fixed;
+}
+label #cancel{
+z-index:1111;
+left:-195px;
+top:17px;
+font-size:30px;
+color:#0a5275;
+padding:4px 7px;
+transition: all .5s ease;
+position:fixed;
+}
+#check:checked ~ .sidebar{
+left:0px;
+}
+#check:checked ~ label #btn{
+left:250px;
+opacity:0;
+pointer-events:none;
+}
+#check:checked ~ label #cancel{
+left:215px;
+}
+#check:checked ~ section{
+left:250px;
+}
+section{
+background-image:url("ghost.jpeg");
+background-size:cover;
+width:370px;
+height:850px;
+margin-left:-10px;
+margin-top:-10px;
+background-attachment:fixed;
+}
+.content{
+ 	width: 100%;
+ 	position:absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	text-align: center;
+ 	color:#ffffff;
+ 	background: transparent;
+  }
+  .content h1{
+  	font-size: 50px;
+  	margin-top: 100px;
+  	color:transparent;
+  	-webkit-text-stroke:1px #fff;
+  	background: url(back.png);
+  	-webkit-background-clip:text;
+  	background-position: 0 0;
+  	animation: back 20s linear infinite; 
+  }
+  @keyframes back{
+  	100%{
+  		background-position: 2000px 0;
+  	}
+  }
+  .content p{
+  	margin: 20px auto;
+  	font-weight: 100;
+  	line-height: 20px;
+  	color:#ffffff;
+  	background: transparent;
+  }
+  .content1{
+ 	width: 100%;
+ 	position:absolute;
+ 	text-align: center;
+ 	color:#ffffff;
+ 	background: transparent;
+  }
+  .content1 button{
+    background: transparent;
+  }
+  button{
+  	width: 200px;
+  	padding: 15px 0;
+  	text-align: center;
+  	margin: 20px 10px;
+  	border-radius: 25px;
+  	font-weight: bold;
+  	border: 2px solid #009688;
+  	background: transparent;
+  	color: #fff;
+  	cursor: pointer;
+  	position: relative;
+
+  }
+   span{
+   	background: #009688;
+   	height: 100%;
+   	width: 0;
+   	border-radius: 25px;
+   	position: absolute;
+   	left: 0;
+   	bottom: 0;
+   	z-index: -1;
+   	transition: 0.5s;
+   }
+   button:hover span{
+   	width: 100%;
+   }
+   button:hover{
+   	border: none;
+   }
+</style>
